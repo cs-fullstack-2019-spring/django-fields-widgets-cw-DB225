@@ -6,7 +6,7 @@
 </head>
 <body>
 {% for eachcity in city %}
-<h3>CONGRATS..!!!! you're now a resident of {{ eachcity.cityOrOrigin }}</h3>
+<h3>CONGRATS mr/Ms {{ eachcity.name }} from {{ eachcity.cityOrOrigin }}, you're now a resident of our city.</h3>
 {% endfor %}
 
 <a href="{% url 'index' %}">Back </a>to the main page
