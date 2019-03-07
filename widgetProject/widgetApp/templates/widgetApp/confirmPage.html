@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for eachcity in city %}
+<h3>CONGRATS..!!!! you're now a resident of {{ eachcity.cityOrOrigin }}</h3>
+{% endfor %}
+
+<a href="{% url 'index' %}">Back </a>to the main page
+</body>
+</html>
