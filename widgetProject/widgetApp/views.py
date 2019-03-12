@@ -18,6 +18,7 @@ def applyPage(request):
             return redirect("confirmPage")
         else:
             print("INVALID")
+            print(form_cities.errors)
     return render(request, 'widgetApp/applyPage.html', {'form': CitiesForm()})
 
 
